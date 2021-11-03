@@ -3,3 +3,5 @@
 ```bash
 docker build -t ${image-name}:${version} .
 ```
+### Credits
+This image was inspired by the [niaquinto/grails](https://github.com/mozart-analytics/grails-docker) image available in the Docker Registry Hub.
