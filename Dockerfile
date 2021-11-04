@@ -9,6 +9,13 @@ RUN apk update \
 
 ENV GRAILS_VERSION 4.0.12
 
+# ENV GRADLE_VERSION 5.6.4
+
+# Install Gradle
+RUN apk add --no-cache gradle
+# WORKDIR /root/.gradle/wrapper/dists/gradle-5.6.4-bin/bxirm19lnfz6nurbatndyydux
+# RUN wget https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip
+
 # Install Grails
 WORKDIR /usr/lib/jvm
 RUN wget https://github.com/grails/grails-core/releases/download/v$GRAILS_VERSION/grails-$GRAILS_VERSION.zip && \
