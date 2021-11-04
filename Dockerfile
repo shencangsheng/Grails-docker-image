@@ -34,4 +34,4 @@ RUN mkdir /app
 WORKDIR /app
 
 # Set Default Behavior
-ENTRYPOINT ["grails"]
+# ENTRYPOINT ["grails"]
